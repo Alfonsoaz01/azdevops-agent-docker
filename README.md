@@ -1,4 +1,5 @@
 # azdevops-agent-docker
+[WIP]
 
 https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops 
 
@@ -25,8 +26,10 @@ https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-person
 
 # build
 open directory : azp-agent-in-docker
-docker build --tag "azp-agent:linux" --file "./dockerfile" . 
+docker build --tag "az-agent" --file "./dockerfile" . 
 
 # run
 docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<Personal Access Token>" -e AZP_POOL="<Agent Pool Name>" -e AZP_AGENT_NAME="Docker Agent - Linux" --name "azp-agent-linux" azp-agent:linux 
+**Example**
+docker run -e AZP_URL="https://dev.azure.com/neworg" -e AZP_TOKEN="secrettoken" -e AZP_POOL="Pool" -e AZP_AGENT_NAME="Docker Agent - Linux" --name "az-agent"
 
