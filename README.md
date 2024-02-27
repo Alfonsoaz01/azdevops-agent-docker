@@ -1,9 +1,7 @@
 # azdevops-agent-docker
-[WIP]
-
-
 This repository contains a Dockerfile and related files for creating an Azure DevOps agent in Docker. For more information on using Docker agents in Azure DevOps, please refer to the [official documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops).
 
+## Environment Variables for the container
 | Environment Variable | Description |
 |----------------------|-------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
