@@ -18,11 +18,15 @@ https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-person
 
 ![image](https://github.com/Alfonsoaz01/azdevops-agent-docker/assets/91730802/218e0acc-eb24-4587-8e86-8926e36700f2)
 
+# pool 
+![image](https://github.com/Alfonsoaz01/azdevops-agent-docker/assets/91730802/3fd116dc-475a-49bf-ae85-9897c33cfa5f)
+
 
 
 # build
-
-docker build --tag "azp-agent:linux" --file "./azp-agent-linux.dockerfile" . 
+open directory : azp-agent-in-docker
+docker build --tag "azp-agent:linux" --file "./dockerfile" . 
 
 # run
 docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<Personal Access Token>" -e AZP_POOL="<Agent Pool Name>" -e AZP_AGENT_NAME="Docker Agent - Linux" --name "azp-agent-linux" azp-agent:linux 
+
