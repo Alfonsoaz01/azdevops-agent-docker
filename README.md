@@ -11,6 +11,14 @@ AZP_WORK	Work directory (default value: _work).
 
 # token
 https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops 
+![image](https://github.com/Alfonsoaz01/azdevops-agent-docker/assets/91730802/d9249f35-8bb5-4f74-b96b-a80f5fea3a26)
+
+![image](https://github.com/Alfonsoaz01/azdevops-agent-docker/assets/91730802/cf25bfb3-0693-4838-817d-d75701b7095b)
+
+
+![image](https://github.com/Alfonsoaz01/azdevops-agent-docker/assets/91730802/218e0acc-eb24-4587-8e86-8926e36700f2)
+
+
 
 # build
 
