@@ -9,12 +9,12 @@ AZP_AGENT_NAME	Agent name (default value: the container hostname).
 AZP_POOL	Agent pool name (default value: Default).
 AZP_WORK	Work directory (default value: _work).
 
-#token
+# token
 https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops 
 
-#build
+# build
 
 docker build --tag "azp-agent:linux" --file "./azp-agent-linux.dockerfile" . 
 
-#run
+# run
 docker run -e AZP_URL="<Azure DevOps instance>" -e AZP_TOKEN="<Personal Access Token>" -e AZP_POOL="<Agent Pool Name>" -e AZP_AGENT_NAME="Docker Agent - Linux" --name "azp-agent-linux" azp-agent:linux 
